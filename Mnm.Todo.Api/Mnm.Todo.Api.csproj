@@ -9,8 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.23" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.23" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Products\Commands\Create\" />
+    <Folder Include="Features\Products\Commands\Delete\" />
+    <Folder Include="Features\Products\Commands\Update\" />
+    <Folder Include="Features\Products\Queries\Get\" />
+    <Folder Include="Features\Products\Queries\List\" />
   </ItemGroup>
 
 </Project>
